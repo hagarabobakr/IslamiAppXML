@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">IslamiAppXML</string>
+    <string name="quran">Quran</string>
+    <string name="hadeth">Hadeth</string>
+    <string name="tasbeh4">Tasbeh</string>
+    <string name="tasbeh">Tasbeh</string>
+    <string name="radio">Radio</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
