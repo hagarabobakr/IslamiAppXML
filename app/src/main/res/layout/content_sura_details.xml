@@ -16,10 +16,10 @@
         app:contentPadding="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHeight_percent=".8"
+        app:layout_constraintHeight_percent=".9"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintWidth_percent=".8"
+        app:layout_constraintWidth_percent=".9"
         app:cardBackgroundColor="@color/white"
         >
 

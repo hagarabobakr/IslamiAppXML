@@ -17,8 +17,21 @@ class HadethRecyclerAdapter(val items: List<Hadeth>) :
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.viewBinding.title.text = items[position].title
+
+        if (onItemHadethClickListner != null){
+            holder.itemView.setOnClickListener{
+                onItemHadethClickListner?.onItemHadethClickListner(position,
+                    items.get(position))
+            }
+        }
     }
 
     override fun getItemCount(): Int = items.size
     class ViewHolder(val viewBinding: ItemHadethBinding) : RecyclerView.ViewHolder(viewBinding.root)
+
+
+    var onItemHadethClickListner :OnItemHadethClickListner? = null
+    interface OnItemHadethClickListner{
+        fun onItemHadethClickListner(pos : Int, item : Hadeth)
+    }
 }
