@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/default_bg"
     tools:context=".home.HomeActivity"
+    style="@style/background_img"
     >
 
     <com.google.android.material.appbar.AppBarLayout
@@ -28,7 +28,7 @@
                     android:layout_height="wrap_content"
                     android:text="اسلامي"
                     android:layout_marginTop="10dp"
-                    android:textColor="@color/black"
+                    style="@style/text_app_color"
                     android:textSize="28sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"

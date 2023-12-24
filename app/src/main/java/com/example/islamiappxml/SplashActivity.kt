@@ -13,8 +13,7 @@ class SplashActivity : AppCompatActivity() {
         setContentView(R.layout.splash)
         Handler(Looper.getMainLooper())
             .postDelayed({
-                // INSIDE RUN METHOD
-                startQuranActivity();
+                startQuranActivity()
             }, 2000)
     }
 
@@ -22,7 +21,8 @@ class SplashActivity : AppCompatActivity() {
         val intent = Intent(
             this@SplashActivity,
             HomeActivity::class.java
-        );
+        )
         startActivity(intent)
+        finish()
     }
 }

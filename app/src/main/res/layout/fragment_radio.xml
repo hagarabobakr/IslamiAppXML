@@ -1,15 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".home.hadith.HadethFragment"
-    android:background="@color/gold"
-    >
+    tools:context=".home.hadith.HadethFragment">
+
+    <ImageView
+        android:id="@+id/radio_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/radio_image"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
+        android:id="@+id/channel_name"
+        style="@style/text_app_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/elmessiri"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radio_img"
+        tools:text="اذاعة القران الكريم" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/radio_recycler_view"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/channel_name"
+        tools:listitem="@layout/item_radio"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        />
 
-</FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

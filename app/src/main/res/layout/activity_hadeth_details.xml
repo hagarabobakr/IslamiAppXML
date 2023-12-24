@@ -28,6 +28,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@id/arrow_back_icon"
         android:fontFamily="@font/elmessiri"
+        style="@style/text_app_color"
         tools:text="الحديث الأول" />
 
     <TextView
@@ -37,7 +38,7 @@
         android:textSize="22sp"
         android:fontFamily="@font/elmessiri"
         android:padding="18dp"
-        android:textColor="@color/black"
+        style="@style/text_app_color"
         android:textStyle="bold"
         android:layout_marginTop="100dp"
         android:layout_margin="12dp"

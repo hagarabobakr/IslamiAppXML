@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/default_bg"
+    style="@style/background_img"
     tools:context=".suraDetails.SuraDetailsActivity">
 
     <com.google.android.material.appbar.AppBarLayout
@@ -34,7 +34,7 @@
                     android:id="@+id/title_tv"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/black"
+                    style="@style/text_app_color"
                     android:textSize="22sp"
                     android:layout_marginTop="20dp"
                     app:layout_constraintBottom_toBottomOf="parent"

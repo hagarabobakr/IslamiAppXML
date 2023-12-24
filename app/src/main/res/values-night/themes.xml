@@ -13,4 +13,16 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+    <style name="background_img">
+        <item name="android:background">@drawable/dark_bg</item>
+    </style>
+    <style name="text_app_color">
+        <item name="color">@color/white</item>
+    </style>
+    <style name="icColor">
+        <item name="android:tint">@color/yellow</item>
+    </style>
+    <style name="cardBackgroundColor">
+        <item name="cardBackgroundColor">#13192D</item>
+    </style>
 </resources>

@@ -10,4 +10,5 @@ object Constants {
     const val SUBHAN_ALLAH = "سبحان الله"
     const val ASTGFER_ALLAH = "استغفر الله"
     const val KHATMA = "لا إله إلا الله وحده لاشريك له له الملك وله الحمد و هو على كل شئ قدير"
+    const val BASE_URL = "https://mp3quran.net/api/v3/"
 }
