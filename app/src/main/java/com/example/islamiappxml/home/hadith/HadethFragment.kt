@@ -35,7 +35,7 @@ class HadethFragment : Fragment() {
         adapter.onItemHadethClickListner = object : HadethRecyclerAdapter.OnItemHadethClickListner{
             override fun onItemHadethClickListner(pos: Int, Item: Hadeth) {
                 val intent = Intent(context, HadethDetailsActivity::class.java)
-                intent.putExtra(Constants.EXTRA_HADETH_NAME, pos)
+                intent.putExtra(Constants.EXTRA_HADETH_NAME, Item.title)
                 intent.putExtra(Constants.EXTRA_HADETH_CONTENT, Item.content)
                 startActivity(intent)
             }
